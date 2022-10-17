@@ -22,7 +22,7 @@ my_autoencoder.build_whole_model()
 my_autoencoder.show_model_summary()
 my_autoencoder.compile_model()
 #Train the model
-my_autoencoder.train_model(epochs=20)
+my_autoencoder.train_model(epochs=15)
 
 #Set up a test image
 test_image_path = list_of_image_paths[6]

@@ -102,7 +102,7 @@ class Autoencoder_model:
         # x = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same')(x)
         # x = LeakyReLU()(x)
         # x = tf.keras.layers.UpSampling2D(size=(2, 2))(x)  # Size is 32x
-        # x = tf.keras.layers.add([x, skip_connection_1])
+        x = tf.keras.layers.add([x, skip_connection_1])
         #Final classifcation layer
         x = tf.keras.layers.Conv2D(filters = 3, kernel_size = (5,5), activation = 'sigmoid', padding = 'same')(x)
         return x
